@@ -1,6 +1,12 @@
 import React from 'react';
 
-export const AddChannel = ({ setCreateType, setIsCreating, setIsEditing, setToggleContainer, type }) => (
+export const AddChannel = ({
+  setCreateType,
+  setIsCreating,
+  setIsEditing,
+  setToggleContainer,
+  type,
+}) => (
   <svg
     width='14'
     height='14'
@@ -11,7 +17,7 @@ export const AddChannel = ({ setCreateType, setIsCreating, setIsEditing, setTogg
       setCreateType(type);
       setIsCreating((prevState) => !prevState);
       setIsEditing(false);
-      if(setToggleContainer) setToggleContainer((prevState) => !prevState) 
+      if (setToggleContainer) setToggleContainer((prevState) => !prevState);
     }}
   >
     <path
